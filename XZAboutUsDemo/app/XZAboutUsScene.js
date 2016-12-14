@@ -39,17 +39,17 @@ class XZAboutUsScene extends Component {
 	  };
 	}
 
-
 	_renderRow(rowData,sectionID,rowID,highlightRow){
 
 		let contentView = this.props.contentArray[rowID].map((data,i) => {
 
 			let titleHeight = (data.title.length == 0) ? 0 : 17
 			let titleMargin = (data.title.length == 0) ? 0 : 10
+
 			return (
 					<View 
 					key={sectionID+rowID+i}
-					style={{marginTop:15}}>
+					style={{marginTop=15}}>
 						<Text style={{marginHorizontal:15,fontSize:16,height:titleHeight}}>{data.title}</Text>
 						<Text 
 						style={{marginHorizontal:15,marginTop:titleMargin,fontSize:13,color:'rgb(92,94,101)'}}
